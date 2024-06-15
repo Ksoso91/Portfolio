@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Mon Portfolio</title>
+        <meta type="description" content = "Ceci est mon portfolio étudiant"  />
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+        <link rel=" stylesheet" href="styles/styles.css" type="text/css">
+    </head>
+    <body>
+        <header>
+            <div class="boxed">
+                <div class="flex aligncenter space-between">
+                    <button onclick="openMenu()" class="header-menu-mobile">
+                        <span class="material-icons">menu</span>
+                    </button>
+                    <a href="#acc" class="header-logo">
+                        <img src="img/Digital_logo_Université_d'Évry.png">
+                    </a>
+                    <ul class="header-menu">
+                        <li><a href="#acc">Accueil</a></li>
+                        <li><a href="#propos">A propos</a></li>
+                        <li><a href="#skill">Compétences</a></li>
+                        <li><a href="#reali">Projets</a></li>
+                        <li><a href="#stages-id">Stages</a></li>
+                        <li><a href="#contact-id">Contact</a></li>
+                    </ul>
+
+                </div>
+
+            </div>
+        </header>
+
+        <div class="slider" id="acc" >
+            <img src="img/slider.jpg" class="slider-background">
+            <div class="slider-content">
+                <h1>Kevin Togbossi</h1>
+                <p>je suis étudiant en but génie électrique et informatique industrielle</p>
+            </div>
+        </div>
+
+        <div class="section" id="propos">
+            <div class="boxed">
+                <div class="flex toColumn mCenter">
+                    <div class="w40 wm100">
+                        <h2>À propos de moi</h2>
+                    </div>
+                    <div class="w60 wm100">
+                        <p>Je suis actuellement étudiant en troisième année en génie électrique et informatique industrielle à l'IUT d'Evry, où je suis un cursus spécialisé en automatisation et informatique industrielle. Passionné par l'informatique, je me consacre particulièrement à l'intelligence artificielle et à la cybersécurité, domaines que j'explore de manière autodidacte et avec un grand enthousiasme. En plus de mes études et de mes passions technologiques, je m'investis bénévolement en tant que régisseur lumière et son dans ma commune, apportant mon soutien aux spectacles de théâtre. Cette expérience me permet de développer des compétences techniques et organisationnelles tout en contribuant à la vie culturelle de ma communauté.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section dark" id="skill">
+            <div class="boxed text-center">
+                <h2>Mes compétences en informatique</h2>
+                <div class="flex toColumn gap20">
+                    <div class="w17 wm100 skill">
+                        <img src="img/C_Logo.png">
+                        <h3>C</h3>
+                    </div>
+                    <div class="w17 wm100 skill">
+                        <img src="img/Gnu-bash.png">
+                        <h3>BASH</h3>
+                    </div>
+                    <div class="w17 wm100 skill">
+                        <img src="img/Python-logo.png">
+                        <h3>PYTHON</h3>
+                    </div>
+                    <div class="w17 wm100 skill">
+                        <img src="img/HTML5_logo.png">
+                        <h3>HTML</h3>
+                    </div>
+                    <div class="w17 wm100 skill">
+                        <img src="img/css3-logo.png">
+                        <h3>CSS</h3>
+                    </div>
+                    <div class="w17 wm100 skill">
+                        <img src="img/JavaScript-Logo.png">
+                        <h3>Javascript</h3>
+                    </div>
+                </div> 
+            </div>
+        </div>
+
+        <div class="section" id="reali">
+            <div class="boxed space-between">
+                <h2>Mes projets</h2>
+                <div class="flex gap20 wrap space-between">
+                   <div class="w32 wm45 projets">
+                    <a href="/">
+                        <img src="img/projet1.jpg">
+                        <h3>Pilotage du convoyeur</h3>
+                    </a>
+                   </div> 
+                   <div class="w32 wm45 projets">
+                    <a href="/">
+                        <img src="img/projet2.jpg">
+                        <h3>Système d'alarme</h3>
+                    </a>
+                   </div> 
+                   <div class="w32 wm45 projets">
+                    <a href="/">
+                        <img src="img/projet1.jpg">
+                        <h3>Robot en milieu confiné</h3>
+                    </a>
+                   </div> 
+                   <div class="w32 wm45 projets">
+                    <a href="/">
+                        <img src="img/projet1.jpg">
+                    </a>
+                   </div> 
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="section" id="stages-id">
+            <div class="boxed space-between">
+                <h2>Mes Stages</h2>
+                <div class="flex gap20 wrap space-between">
+                   <div class="w32 wm45 projets">
+                    <a href="/">
+                        <img src="img/projet1.jpg">
+                        <h3>Pilotage du convoyeur</h3>
+                    </a>
+                   </div> 
+                   <div class="w32 wm45 projets">
+                    <a href="/">
+                        <img src="img/projet2.jpg">
+                        <h3>Système d'alarme</h3>
+                    </a>
+                   </div> 
+                </div>
+            </div>
+        </div>
+
+
+        <div class="section dark footer" id="contact-id">
+            <div class="boxed text-center">
+                <h2>Contactez-moi</h2>
+                <div class=" flex toColumn space-between mgap20">
+                    <div class="w32 wm100 contact">
+                        <span class="material-icons icon">mail</span>
+                        <span class="label">Email</span>
+                        <span class="value">keviin.togbossi@gmail.com</span>
+                    </div>
+                    <div class="w32 wm100 contact">
+                        <span class="material-icons icon">mail</span>
+                        <span class="label">Numéro de téléphone</span>
+                        <span class="value">+33602438965</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </body>
+
+    <script src="js/app.js"> </script>
+</html>
