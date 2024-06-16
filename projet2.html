@@ -22,7 +22,16 @@
                         <li><a href="index.html">Accueil</a></li>
                         <li><a href="index.html#propos">A propos</a></li>
                         <li><a href="index.html#skill">Compétences</a></li>
-                        <li><a href="index.html#reali">Projets</a></li>
+                        <li class="has-sous-nav">
+                            <a href="index.html#reali">Projets</a>
+                            <ul class="sous-nav">
+                                <li><a href="projet1.html">Pilotage du convoyeur</a></li>
+                                <li><a href="projet2.html">Système d'alarme</a></li>
+                                <li><a href="projet3.html">Robot en millieu confiné</a></li>
+                                <li><a href="bras-robot.html">Bras robot</a></li>
+                            </ul>
+                           
+                        </li>
                         <li class="has-sous-nav">
                             <a href="index.html#stages-id">Stages</a>
                             <ul class="sous-nav">
@@ -41,7 +50,7 @@
 
         <div class="section">
             <div class="boxed">
-                <div class="flex toColumn mCenter">
+                <div class="flex ">
                     <div class="w40 wm100 projet2 ">
                         <h4>Systéme d'alarme</h4>
                         <img src="img/projet2.jpg">
@@ -52,27 +61,27 @@
                         <a href="pdf/SAE 5 THIAM_TOGBOSSI (1).pdf">Compte rendu : Système d'alarme.pdf</a>
                     </div>
                   
-                    <div class="w60 wm100 projet2" >
+                    <div class="w60 wm100 projet4" >
                            
-                            <p>Le projet consiste à réaliser une maquette de maison équipée d'un système d'alarme domestique utilisant des cartes Arduino et différents capteurs. Lors de la mise en œuvre du projet, après l'installation des capteurs et l'exécution du programme final, nous avons constaté que tout fonctionnait correctement. Cependant, pour améliorer notre programme, nous envisageons d'ajouter une attente lors de l'activation de l'alarme pour permettre aux personnes entrant de saisir le mot de passe avant que l'alarme ne se déclenche.
+                            <p>Le projet consiste à réaliser une maquette de maison équipée d'un système d'alarme domestique utilisant des cartes Arduino et différents capteurs. Lors de la mise en œuvre du projet, après l'installation des capteurs et l'exécution du programme final, nous avons constaté que tout fonctionnait correctement. Cependant, pour améliorer notre programme, nous envisageons d'ajouter une attente lors de l'activation de l'alarme pour permettre aux personnes entrant de saisir le mot de passe avant que l'alarme ne se déclenche.</p>
 
-                                Détails Techniques :
-                                Choix des Capteurs : Deux capteurs de mouvement ont été sélectionnés après des tests pour leur adaptabilité au projet. Ils seront placés au niveau de la porte et de la fenêtre pour détecter les intrusions.
+                               <p> Détails Techniques :</p>
+                                <p>Choix des Capteurs : Deux capteurs de mouvement ont été sélectionnés après des tests pour leur adaptabilité au projet. Ils seront placés au niveau de la porte et de la fenêtre pour détecter les intrusions.</p>
                                 
-                                Communication : Utilisation du module Grove 433 MHz pour la transmission des données entre les capteurs et les cartes Arduino.
+                               <p> Communication : Utilisation du module Grove 433 MHz pour la transmission des données entre les capteurs et les cartes Arduino.</p>
                                 
-                                Installation des Capteurs :
+                               <p> Installation des Capteurs :</p>
                                 
-                                Capteur de mouvement de la porte câblé sur la broche digitale 4 de la carte Arduino Méga 2560.
+                               <p> Capteur de mouvement de la porte câblé sur la broche digitale 4 de la carte Arduino Méga 2560.
                                 Capteur de mouvement de la fenêtre câblé sur la broche digitale 6 de la même carte Arduino.
                                 Utilisation d'un module Grove Méga Shield pour faciliter le raccordement des capteurs.
-                                Transmission des Données : Un émetteur est connecté à la première carte Arduino Méga (avec les capteurs) sur la broche digitale 2, tandis qu'un récepteur est connecté à une deuxième carte Arduino Méga sur la même broche digitale, assurant ainsi la communication entre les capteurs et le système central.
+                                Transmission des Données : Un émetteur est connecté à la première carte Arduino Méga (avec les capteurs) sur la broche digitale 2, tandis qu'un récepteur est connecté à une deuxième carte Arduino Méga sur la même broche digitale, assurant ainsi la communication entre les capteurs et le système central.</p>
                                 
-                                Maquette de Maison : La maquette est construite avec des planches en bois pour les murs et une planche en pin massif pour le sol. Ses dimensions sont de 30 cm de largeur, 40 cm de longueur et 30 cm de hauteur.
+                               <p> Maquette de Maison : La maquette est construite avec des planches en bois pour les murs et une planche en pin massif pour le sol. Ses dimensions sont de 30 cm de largeur, 40 cm de longueur et 30 cm de hauteur.</p>
                                 
-                                Stratégie d'Emplacement des Capteurs : Un capteur de mouvement est placé au-dessus de la porte et un autre au-dessus de la fenêtre pour couvrir les points d'entrée de la maison, détectant ainsi toute intrusion lorsque l'alarme est activée.
+                               <p> Stratégie d'Emplacement des Capteurs : Un capteur de mouvement est placé au-dessus de la porte et un autre au-dessus de la fenêtre pour couvrir les points d'entrée de la maison, détectant ainsi toute intrusion lorsque l'alarme est activée.</p>
                                 
-                                Ce projet combine habilement les aspects de la construction physique d'une maquette avec des éléments technologiques avancés pour créer un système d'alarme domestique efficace et fonctionnel.</p>
+                               <p> Ce projet combine habilement les aspects de la construction physique d'une maquette avec des éléments technologiques avancés pour créer un système d'alarme domestique efficace et fonctionnel.</p>
                     </div>
                 </div>
             </div>

@@ -22,7 +22,16 @@
                         <li><a href="index.html">Accueil</a></li>
                         <li><a href="index.html#propos">A propos</a></li>
                         <li><a href="index.html#skill">Compétences</a></li>
-                        <li><a href="index.html#reali">Projets</a></li>
+                        <li class="has-sous-nav">
+                            <a href="index.html#reali">Projets</a>
+                            <ul class="sous-nav">
+                                <li><a href="projet1.html">Pilotage du convoyeur</a></li>
+                                <li><a href="projet2.html">Système d'alarme</a></li>
+                                <li><a href="projet3.html">Robot en millieu confiné</a></li>
+                                <li><a href="bras-robot.html">Bras robot</a></li>
+                            </ul>
+                           
+                        </li>
                         <li class="has-sous-nav">
                             <a href="index.html#stages-id">Stages</a>
                             <ul class="sous-nav">
@@ -42,24 +51,37 @@
         <div class="section">
             <div class="boxed">
                 <div class="flex toColumn mCenter">
-                    <div class="w40 wm100 projet1 ">
+                    <div class="w40 wm100 projet4 ">
                         <h4>Bras robot</h4>
-                        <img src="img/projet1.jpg">
+                        <img src="img/projet3.png">
                         
                     </div>
-                    <div class=" projet1-2 ">
-                        <img src="img/projet1-2.jpg">
-                        <a href="pdf/THIAM_TOGBOSSI_SAE5.pdf">Compte rendu : SAE5.pdf</a>
-                    </div>
+                    
                   
-                    <div class="w60 wm100 projet1" >
-                        <h5>Partie 1 : Introduction au Robot Niryo Ned 2</h5>
-
-                          <p>  Dans la première partie du projet, nous avons utilisé le robot Niryo Ned 2 pour apprendre les bases de la programmation avec Blockly. Blockly est une bibliothèque développée par Google, inspirée du langage Scratch du MIT. Grâce à cette initiation, nous avons acquis les compétences nécessaires pour programmer et contrôler le robot Niryo Ned 2. Cette étape fondamentale nous a permis de nous familiariser avec les principes de la programmation par blocs et de comprendre les fonctionnalités spécifiques du robot.
-                        </p>
-                        <h6> Partie 2 : SAE - Interface de Contrôle de Convoyeur </h6>
+                    <div class=" wm100 projet4" >
                            
-                            <p>Dans la seconde partie du projet consistait en une activité de SAE (Situation d'Apprentissage et d'Évaluation) collaborative. Nous avons créé une interface de contrôle-commande pour le convoyeur, pilotée par le robot Niryo Ned 2, en coordination avec d'autres robots Ned 2 gérés par nos camarades. L'objectif de ce projet était de simuler une chaîne industrielle intégrant trois bras robotisés et des convoyeurs, tous pilotés par une carte Arduino-Uno. Cette interface permettait une synchronisation efficace des mouvements des robots et des convoyeurs, simulant ainsi un processus industriel automatisé.</p>
+                        <p>Objectif du Projet :
+                        Conception et développement d’un robot à 3 axes capable de réaliser des tâches de manipulation dans un environnement industriel.</p>
+                        
+                       <p>Caractéristiques Techniques :
+                        
+                        Mouvement à trois axes : X, Y, Z
+                        Vitesse maximale : Quelques centimètres par seconde
+                        Intégration de capteurs : Pour la détection d’objets et la sécurité </p>
+                       
+                        <p>Fonctionnalités Attendues :
+                
+                        Mouvement précis et répétable
+                        Contrôle facile à utiliser et à programmer
+                        Intégration d’une Interface Homme-Machine (IHM)</p>
+                        
+                        <p>Logiciels Utilisés :
+                        
+                        Programme principal : Arduino (langage C)
+                        Programme d’asservissement visuel : Python
+                        Communication entre les deux langages : Pour une intégration fluide</p>                        
+                        <p>Ma Contribution :
+                        Ma contribution au projet a été centrée sur la programmation pour piloter le robot avec une caméra, en utilisant OpenCV pour le traitement d'images en temps réel et pyniryo2 pour récupérer les images du robot Niryo.</p>
                     </div>
                 </div>
             </div>

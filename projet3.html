@@ -22,7 +22,16 @@
                         <li><a href="index.html">Accueil</a></li>
                         <li><a href="index.html#propos">A propos</a></li>
                         <li><a href="index.html#skill">Compétences</a></li>
-                        <li><a href="index.html#reali">Projets</a></li>
+                        <li class="has-sous-nav">
+                            <a href="index.html#reali">Projets</a>
+                            <ul class="sous-nav">
+                                <li><a href="projet1.html">Pilotage du convoyeur</a></li>
+                                <li><a href="projet2.html">Système d'alarme</a></li>
+                                <li><a href="projet3.html">Robot en millieu confiné</a></li>
+                                <li><a href="bras-robot.html">Bras robot</a></li>
+                            </ul>
+                           
+                        </li>
                         <li class="has-sous-nav">
                             <a href="index.html#stages-id">Stages</a>
                             <ul class="sous-nav">
@@ -42,24 +51,33 @@
         <div class="section">
             <div class="boxed">
                 <div class="flex toColumn mCenter">
-                    <div class="w40 wm100 projet1 ">
+                    <div class="w40 wm100 projet4 ">
                         <h4>Robot en millieu confiné</h4>
-                        <img src="img/projet1.jpg">
+                        <img src="img/projet4.jpg">
                         
                     </div>
-                    <div class=" projet1-2 ">
-                        <img src="img/projet1-2.jpg">
-                        <a href="pdf/THIAM_TOGBOSSI_SAE5.pdf">Compte rendu : SAE5.pdf</a>
-                    </div>
+                    
                   
-                    <div class="w60 wm100 projet1" >
-                        <h5>Partie 1 : Introduction au Robot Niryo Ned 2</h5>
-
-                          <p>  Dans la première partie du projet, nous avons utilisé le robot Niryo Ned 2 pour apprendre les bases de la programmation avec Blockly. Blockly est une bibliothèque développée par Google, inspirée du langage Scratch du MIT. Grâce à cette initiation, nous avons acquis les compétences nécessaires pour programmer et contrôler le robot Niryo Ned 2. Cette étape fondamentale nous a permis de nous familiariser avec les principes de la programmation par blocs et de comprendre les fonctionnalités spécifiques du robot.
-                        </p>
-                        <h6> Partie 2 : SAE - Interface de Contrôle de Convoyeur </h6>
+                    <div class="w60 wm100 projet4" >
                            
-                            <p>Dans la seconde partie du projet consistait en une activité de SAE (Situation d'Apprentissage et d'Évaluation) collaborative. Nous avons créé une interface de contrôle-commande pour le convoyeur, pilotée par le robot Niryo Ned 2, en coordination avec d'autres robots Ned 2 gérés par nos camarades. L'objectif de ce projet était de simuler une chaîne industrielle intégrant trois bras robotisés et des convoyeurs, tous pilotés par une carte Arduino-Uno. Cette interface permettait une synchronisation efficace des mouvements des robots et des convoyeurs, simulant ainsi un processus industriel automatisé.</p>
+                        <p>L'objectif de ce projet est de développer un système intelligent permettant à un robot mobile de réaliser un scénario prédéfini, en intégrant de nouveaux capteurs tels qu'un capteur de suivi de ligne, un capteur de couleur et un bouton poussoir.</p>
+
+                        <p>Scénario à Réaliser :</p>
+                        <p>Le robot doit effectuer une série de tâches depuis un point de départ jusqu'à un point d'arrivée, en suivant un parcours défini par les étapes suivantes : </p>
+                        
+                        <p>Suivi de Ligne : Le robot suit une ligne depuis son point de départ.</p>
+                       <p> Détection d'Obstacle :</p>
+                        <p class="step">1- Réduction de la vitesse à environ 15 cm de l'obstacle.</p>
+                       <p> 2- Avance lente jusqu'à la détection de collision avec l'obstacle.
+                        <p>3- Identification de la couleur de l'obstacle.</p>
+                        <p>4- Recul jusqu'à une distance convenable pour éviter l'obstacle.</p>
+                       <p> 5- Évitement de l'obstacle et reprise du suivi de ligne.</p>
+                       <p> 6- Suivi de Ligne: Le robot continue à suivre la ligne.</p>
+                        <p>Détection de Ligne Perpendiculaire : </p>
+                        <p>Rotation du capteur d'obstacle à gauche pour suivre un mur à distance constante.
+                        Reprise du suivi de ligne à la détection d'une nouvelle ligne perpendiculaire.
+                        Chemin basé sur la Couleur de l'Obstacle : Le robot prend le chemin correspondant à la couleur détectée de l'obstacle.
+                        Arrêt en Fonction de la Couleur : Le robot s'arrête à une distance spécifique de l'obstacle final, en fonction de la couleur détectée précédemment.</p>
                     </div>
                 </div>
             </div>
