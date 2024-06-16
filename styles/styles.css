@@ -46,6 +46,21 @@ h2{
   margin-bottom: 100px;
 }
 
+h4{
+    font-size: 2rem;
+   margin-bottom: 100px;
+} 
+
+h5{
+    font-size: 1.5rem;
+   margin-bottom: 100px;
+} 
+
+h6{
+    font-size: 1.5rem;
+   margin-bottom: 100px;
+} 
+
 
 .slider-content p{
     color: #fff;
@@ -58,6 +73,10 @@ p{
     line-height: 1.5em;
 }
 
+p1{
+        font-size: 1.5rem;
+        line-height: 1.5em; 
+}
 .section {
    padding: 100px 0; 
 }
@@ -137,6 +156,92 @@ p{
   position: relative;
 }
 
+.projet1 p{
+    
+    margin-top: 200px;
+    margin-bottom: 2em; /* Espace entre les blocs */
+
+}
+
+.projet2 p{
+    
+    margin-top: 200px;
+    margin-bottom: 2em; /* Espace entre les blocs */
+    font-size: 1.5rem;
+    line-height: 1.5em;
+
+}
+
+
+.projet1 p:last-of-type{
+    margin-bottom: 0;
+}
+
+.projet1 h4{
+    position: absolute;
+    margin-top: 50px;
+    
+}
+
+.projet1 h5{
+    position: absolute;
+    margin-top: 130px;
+    
+}
+
+.projet1 h6{
+    position: absolute;
+    margin-top: 100px;
+    
+}
+
+.projet1 img{
+    width: 80%;
+    height: auto;
+    top: 30%;
+    object-fit: cover;
+    left: 50%;
+    margin: 0 20px 20px 0;
+    margin-top:200px;
+
+}
+
+.projet2 img{
+    width: 100%;
+    height: auto;
+    top: 30%;
+    object-fit: cover;
+    left: 50%;
+    margin: 0 20px 20px 0;
+    margin-top:100px;
+
+}
+
+.projet2 p{
+    margin-left:-300px;
+
+}
+
+.projet1-2 img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    position: relative;
+    
+    margin-left: -400px;
+    margin-top:800px;
+}
+
+
+.projet2-2 img{
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+    position: relative;
+    
+    margin-left: -300px;
+    margin-top:500px;
+}
 
 .projets h3{
     position: absolute;
@@ -148,6 +253,17 @@ p{
   
 }
 
+.stags h3{
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    font-size: 2rem;
+    width: max-content;
+    color: #3881ac;
+  
+}
+
 .projets a{
     display: block;
     width: 100%;
@@ -156,12 +272,62 @@ p{
     color: #fff;
 }
 
+.projet1-2 a {
+    position: absolute;
+    top: 140%;
+    left:18%;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color:  #000; 
+}
+
+.projet2-2 a {
+    position: absolute;
+    top: 100%;
+    left:18%;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color:  #000; 
+}
+
+.CC2V a {
+    position: absolute;
+    top: 60%;
+    left:18%;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color:  #000; 
+
+}
+
 .projets img{
     width: 100%;
     height: 100%;
     object-fit: cover;
     filter:brightness(40%);
     transition:.4s ease;
+}
+
+.stags img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter:brightness(40%);
+    transition:.4s ease;
+    object-fit: contain;
+
+}
+
+.CC2V img {
+    width: 70%;
+    display: relative;
+    height: auto;
+    left:0;
+    top:0;
+    bottom: 100px;
 }
 
 .projets:hover img{
@@ -214,15 +380,20 @@ header{
 }
 
 .header-logo img{
-    width: 60px;
+    width: 150px;
 }
 
 .header-menu{
     display: flex;
     align-items: center;
     list-style: none;
+    position: sticky;
 }
 
+.header-menu > ul{
+    display: flex;
+    list-style: none;
+}
 
 .header-menu li a{
     text-decoration: none;
@@ -240,6 +411,16 @@ header{
 .header-menu-mobile{
     display:none;
 }
+
+.sous-nav{
+    list-style: none;
+    display: none;
+}
+
+.has-sous-nav:hover .sous-nav{
+    display: block;
+}
+
 @media(max-width: 810px){
     header{
         height: 60px !important;

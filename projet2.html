@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Mon Portfolio</title>
+        <meta type="description" content = "Ceci est mon portfolio étudiant"  />
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+        <link rel=" stylesheet" href="styles/styles.css" type="text/css">
+    </head>
+    <body>
+        <header>
+            <div class="boxed">
+                <div class="flex aligncenter space-between">
+                    <button onclick="openMenu()" class="header-menu-mobile">
+                        <span class="material-icons">menu</span>
+                    </button>
+                    <a href="#acc" class="header-logo">
+                        <img src="img/Digital_logo_Université_d'Évry.png">
+                    </a>
+                    <ul class="header-menu">
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="index.html#propos">A propos</a></li>
+                        <li><a href="index.html#skill">Compétences</a></li>
+                        <li><a href="index.html#reali">Projets</a></li>
+                        <li class="has-sous-nav">
+                            <a href="index.html#stages-id">Stages</a>
+                            <ul class="sous-nav">
+                                <li><a href="stage1.html">Stage1</a></li>
+                                <li><a href="stage2.html">Stage2</a></li>
+                            </ul>
+                           
+                        </li>
+                        <li><a href="#contact-id">Contact</a></li>
+                    </ul>
+
+                </div>
+
+            </div>
+        </header>
+
+        <div class="section">
+            <div class="boxed">
+                <div class="flex toColumn mCenter">
+                    <div class="w40 wm100 projet2 ">
+                        <h4>Systéme d'alarme</h4>
+                        <img src="img/projet2.jpg">
+                        
+                    </div>
+                    <div class=" projet2-2 ">
+                        <img src="img/projet2-2.jpg">
+                        <a href="pdf/SAE 5 THIAM_TOGBOSSI (1).pdf">Compte rendu : Système d'alarme.pdf</a>
+                    </div>
+                  
+                    <div class="w60 wm100 projet2" >
+                           
+                            <p>Le projet consiste à réaliser une maquette de maison équipée d'un système d'alarme domestique utilisant des cartes Arduino et différents capteurs. Lors de la mise en œuvre du projet, après l'installation des capteurs et l'exécution du programme final, nous avons constaté que tout fonctionnait correctement. Cependant, pour améliorer notre programme, nous envisageons d'ajouter une attente lors de l'activation de l'alarme pour permettre aux personnes entrant de saisir le mot de passe avant que l'alarme ne se déclenche.
+
+                                Détails Techniques :
+                                Choix des Capteurs : Deux capteurs de mouvement ont été sélectionnés après des tests pour leur adaptabilité au projet. Ils seront placés au niveau de la porte et de la fenêtre pour détecter les intrusions.
+                                
+                                Communication : Utilisation du module Grove 433 MHz pour la transmission des données entre les capteurs et les cartes Arduino.
+                                
+                                Installation des Capteurs :
+                                
+                                Capteur de mouvement de la porte câblé sur la broche digitale 4 de la carte Arduino Méga 2560.
+                                Capteur de mouvement de la fenêtre câblé sur la broche digitale 6 de la même carte Arduino.
+                                Utilisation d'un module Grove Méga Shield pour faciliter le raccordement des capteurs.
+                                Transmission des Données : Un émetteur est connecté à la première carte Arduino Méga (avec les capteurs) sur la broche digitale 2, tandis qu'un récepteur est connecté à une deuxième carte Arduino Méga sur la même broche digitale, assurant ainsi la communication entre les capteurs et le système central.
+                                
+                                Maquette de Maison : La maquette est construite avec des planches en bois pour les murs et une planche en pin massif pour le sol. Ses dimensions sont de 30 cm de largeur, 40 cm de longueur et 30 cm de hauteur.
+                                
+                                Stratégie d'Emplacement des Capteurs : Un capteur de mouvement est placé au-dessus de la porte et un autre au-dessus de la fenêtre pour couvrir les points d'entrée de la maison, détectant ainsi toute intrusion lorsque l'alarme est activée.
+                                
+                                Ce projet combine habilement les aspects de la construction physique d'une maquette avec des éléments technologiques avancés pour créer un système d'alarme domestique efficace et fonctionnel.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    
+
+            <div class="section dark footer" id="contact-id">
+                <div class="boxed text-center">
+                    <h2>Contactez-moi</h2>
+                    <div class=" flex toColumn space-between mgap20">
+                        <div class="w32 wm100 contact">
+                            <span class="material-icons icon">mail</span>
+                            <span class="label">Email</span>
+                            <span class="value">keviin.togbossi@gmail.com</span>
+                        </div>
+                        <div class="w32 wm100 contact">
+                            <span class="material-icons icon">mail</span>
+                            <span class="label">Numéro de téléphone</span>
+                            <span class="value">+33602438965</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+    </body>
+
+    <script src="js/app.js"> </script>
+</html>
